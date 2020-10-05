@@ -1,4 +1,4 @@
-# Ionic React Conference Application
+# Retail Management
 
 
 This application is purely a kitchen-sink demo of the Ionic Framework and React.

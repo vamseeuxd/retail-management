@@ -59,7 +59,7 @@ interface DispatchProps {
 
 interface IonicAppProps extends StateProps, DispatchProps { }
 
-const IonicApp: React.FC<IonicAppProps> = ({ darkMode, schedule, setIsLoggedIn, setUsername, loadConfData, loadUserData }) => {
+const RmApp: React.FC<IonicAppProps> = ({ darkMode, schedule, setIsLoggedIn, setUsername, loadConfData, loadUserData }) => {
 
   useEffect(() => {
     loadUserData();
@@ -109,5 +109,5 @@ const IonicAppConnected = connect<{}, StateProps, DispatchProps>({
     schedule: state.data.schedule
   }),
   mapDispatchToProps: { loadConfData, loadUserData, setIsLoggedIn, setUsername },
-  component: IonicApp
+  component: RmApp
 });
